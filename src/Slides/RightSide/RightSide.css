@@ -1,0 +1,6 @@
+.strategy {
+  padding: 25px 18px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

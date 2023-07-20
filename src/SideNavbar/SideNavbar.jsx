@@ -61,9 +61,9 @@ const SideNavbar = () => {
           </div>
         </div>
       </nav>
-      <section class="home grid">
-        {/* <LeftSide />
-        <MiddleSide /> */}
+      <section className="home grid">
+        <LeftSide />
+        <MiddleSide />
         <RightSide />
       </section>
     </>

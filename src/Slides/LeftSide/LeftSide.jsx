@@ -42,15 +42,15 @@ const LeftSide = () => {
 
           <div className="transaction">
             <span>2020-08-07</span>
-            <h5>Withdrawal Transfer to Bank-XXX11</h5>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
           </div>
           <div className="transaction">
             <span>2020-07-21</span>
-            <h5>Withdrawal Transfer to Bank-XXX11</h5>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
           </div>
           <div className="transaction">
             <span>2020-07-16</span>
-            <h5>Withdrawal Transfer to Bank-XXX11</h5>
+            <h6>Withdrawal Transfer to Bank-XXX11</h6>
           </div>
         </div>
       </div>

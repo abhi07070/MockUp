@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 :root {
   /* ===== Colors ===== */
@@ -23,6 +25,7 @@
 
 .grid {
   display: grid;
+  /* grid-template-rows: 20rem; */
   grid-template-columns: 20rem auto 20rem;
 }
 

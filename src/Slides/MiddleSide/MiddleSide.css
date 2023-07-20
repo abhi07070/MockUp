@@ -7,6 +7,7 @@
 
 .income-detail h4 {
   color: var(--primary-color);
+  font-weight: 500;
 }
 .income-detail h3 {
   padding: 10px 0;
@@ -67,4 +68,11 @@
 .goals .bars {
   display: flex;
   /* flex-direction: column; */
+}
+
+@media screen and (max-width: 700px) {
+  .income {
+    /* padding: 15px 18px 15px 20px; */
+    height: 100vh;
+  }
 }

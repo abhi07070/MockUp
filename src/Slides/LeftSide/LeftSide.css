@@ -32,13 +32,7 @@ img {
   font-style: normal;
 }
 
-.b-info-first span {
-  font-weight: 400;
-  color: var(--text-color);
-  font-size: small;
-}
-
-button {
+.balance-info button {
   display: flex;
   align-items: center;
   gap: 3px;
@@ -50,7 +44,13 @@ button {
   color: var(--sidebar-color);
   cursor: pointer;
   /* width: 100%;
-  justify-content: center; */
+    justify-content: center; */
+}
+
+.b-info-first span {
+  font-weight: 400;
+  color: var(--text-color);
+  font-size: small;
 }
 
 .transactions {
@@ -68,6 +68,14 @@ button {
   color: var(--text-color);
   font-size: small;
 }
-.transaction h5 {
+.transaction h6 {
+  font-size: small;
   font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+  .profile {
+    /* padding: 15px 18px 15px 20px; */
+    height: 100vh;
+  }
 }

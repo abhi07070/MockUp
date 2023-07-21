@@ -99,6 +99,15 @@
 @media screen and (max-width: 700px) {
   .strategy {
     padding: 15px 18px 15px 20px;
-    height: 100vh;
+  }
+
+  .strategy .sliders h6 {
+    font-size: 0.699rem;
+  }
+
+  .strategy .consider h3,
+  .strategy .sliders .slider span,
+  .contribution span {
+    font-size: 0.8rem;
   }
 }

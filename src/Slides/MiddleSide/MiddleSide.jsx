@@ -3,7 +3,7 @@ import ApexChart from '../../ApexChart/ApexChart';
 import './MiddleSide.css';
 import RadialBar from '../../ApexChart/RadialBar';
 
-const MiddleSide = () => {
+const MiddleSide = ({ windowWidth }) => {
   return (
     <>
       <div className="income">
@@ -33,7 +33,9 @@ const MiddleSide = () => {
         <ApexChart />
         <div className="compare">
           <h3>How do I compre to my peers?</h3>
-          <span>These numbers represent current goal achievement</span>
+          <span className="compare-span">
+            These numbers represent current goal achievement
+          </span>
 
           <div className="goals">
             <div className="left-goal">
@@ -48,7 +50,7 @@ const MiddleSide = () => {
               </span>
             </div>
             <div className="bars">
-              <RadialBar />
+              <RadialBar windowWidth={windowWidth} />
             </div>
           </div>
         </div>

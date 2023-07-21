@@ -5,9 +5,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body {
-  overflow-x: hidden;
-}
 :root {
   /* ===== Colors ===== */
   /* --body-color: #e4e9f7; */
@@ -32,10 +29,8 @@ body {
 .home {
   position: absolute;
   top: 0;
-  top: 0;
-  left: 250px;
   height: 100vh;
-  width: calc(100% - 250px);
+  width: 100%;
   background: var(--body-color);
   transition: var(--tran-05);
 }
@@ -58,4 +53,12 @@ body.dark .home .text {
 .radial-bar-container {
   display: flex;
   justify-content: space-between; /* Adjust the flex properties as per your requirement */
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: none;
+  }
 }

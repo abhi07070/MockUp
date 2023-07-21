@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 
-const RadialBar = () => {
+const RadialBar = ({ windowWidth }) => {
   const state = {
     series: [78, 95, 59],
     options: {
@@ -21,6 +21,7 @@ const RadialBar = () => {
             total: {
               show: true,
               label: 'Total',
+              fontSize: '15px',
               formatter: function (w) {
                 return 249;
               },
@@ -39,7 +40,7 @@ const RadialBar = () => {
         options={state.options}
         series={state.series}
         type="radialBar"
-        height={200}
+        height={180}
       />
     </div>
   );

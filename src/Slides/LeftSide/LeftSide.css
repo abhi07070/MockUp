@@ -27,6 +27,7 @@ img {
   flex-direction: column;
   gap: 1rem;
 }
+
 .balance-info h4 {
   font-weight: 550;
   font-style: normal;
@@ -43,8 +44,6 @@ img {
   background: var(--primary-color);
   color: var(--sidebar-color);
   cursor: pointer;
-  /* width: 100%;
-    justify-content: center; */
 }
 
 .b-info-first span {
@@ -73,9 +72,39 @@ img {
   font-weight: 500;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .profile {
-    /* padding: 15px 18px 15px 20px; */
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
+  .balance-info button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.profile li {
+  list-style: none;
+}
+
+.profile li a {
+  position: relative;
+}
+.profile li a::after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 24px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background: #85afff;
+}
+.profile li a .icon {
+  position: fixed;
+  top: 13px;
+  right: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }

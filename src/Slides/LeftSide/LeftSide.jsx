@@ -1,7 +1,8 @@
 import React from 'react';
 import user from './user.jpeg';
 import './LeftSide.css';
-const LeftSide = () => {
+
+const LeftSide = ({ BottomData, windowWidth }) => {
   return (
     <>
       <div className="profile">
@@ -11,7 +12,7 @@ const LeftSide = () => {
           </div>
           <div className="profile-name">
             <h2>Hi Mike</h2>
-            <span>welcome back,</span>
+            <span>Welcome back,</span>
           </div>
         </div>
 
@@ -29,7 +30,6 @@ const LeftSide = () => {
             <h4>$1,892</h4>
             <span>Total Interest</span>
           </div>
-
           <div className="btn">
             <button>
               I want to <i class="bx bxs-down-arrow"></i>
@@ -59,3 +59,13 @@ const LeftSide = () => {
 };
 
 export default LeftSide;
+
+{
+  /* {windowWidth < 800 && hasBellIcon && (
+          <li className="nav-link">
+            <a href="#">
+              <i className="bx bx-bell icon"></i>
+            </a>
+          </li>
+        )} */
+}

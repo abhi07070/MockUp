@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+
 :root {
   /* ===== Colors ===== */
   /* --body-color: #e4e9f7; */

@@ -100,10 +100,11 @@ img {
   border-radius: 50px;
   background: #85afff;
 }
-.profile li a .icon {
+.profile li a .bill {
   position: fixed;
   top: 13px;
   right: 25px;
+  font-size: 20px;
   display: flex;
   justify-content: end;
   align-items: end;

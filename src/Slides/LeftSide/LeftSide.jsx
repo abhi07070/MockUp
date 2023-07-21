@@ -3,9 +3,18 @@ import user from './user.jpeg';
 import './LeftSide.css';
 
 const LeftSide = ({ BottomData, windowWidth }) => {
+  const hasBellIcon = BottomData.some((data) => data.icon === 'bell');
+
   return (
     <>
       <div className="profile">
+        {windowWidth < 800 && hasBellIcon && (
+          <li className="nav-link">
+            <a href="#">
+              <i className="bx bx-bell bill"></i>
+            </a>
+          </li>
+        )}
         <div className="profile-detail">
           <div>
             <img src={user} alt="" />
@@ -59,13 +68,3 @@ const LeftSide = ({ BottomData, windowWidth }) => {
 };
 
 export default LeftSide;
-
-{
-  /* {windowWidth < 800 && hasBellIcon && (
-          <li className="nav-link">
-            <a href="#">
-              <i className="bx bx-bell icon"></i>
-            </a>
-          </li>
-        )} */
-}

@@ -106,7 +106,7 @@ const SideNavbar = () => {
       )}
 
       <section className="home grid">
-        <LeftSide />
+        <LeftSide BottomData={BottomData} windowWidth={windowWidth} />
         <MiddleSide />
         <RightSide />
       </section>

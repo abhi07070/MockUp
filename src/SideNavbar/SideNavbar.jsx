@@ -29,7 +29,10 @@ const SideNavbar = () => {
               <div className="menu">
                 <ul className="menu-links">
                   {NavData.map((data, key) => (
-                    <li className="nav-link" key={key}>
+                    <li
+                      className={`nav-link ${key === 0 ? 'primary-bg' : ''}`}
+                      key={key}
+                    >
                       <a href="#">
                         <i className={`bx bx-${data.icon} icon`}></i>
                       </a>
@@ -63,9 +66,12 @@ const SideNavbar = () => {
                     <input type="text" placeholder="Search..." />
                   </li>
                 )}
-                <ul className="menu-links">
+                <ul className="menu-links-container">
                   {NavData.map((data, key) => (
-                    <li className="nav-link" key={key}>
+                    <li
+                      className={`nav-link ${key === 0 ? 'primary-bg' : ''}`}
+                      key={key}
+                    >
                       <a href="#">
                         <i className={`bx bx-${data.icon} icon`}></i>
                       </a>

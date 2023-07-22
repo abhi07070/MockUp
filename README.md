@@ -35,9 +35,9 @@ To use this project, follow these steps:
 
 View on different devices
 
-![User Interface Screenshot 1 - Desktop](./fullscreen.png)
+![User Interface Screenshot 1 - Desktop](./public/fullscreen.png)
 
-![User Interface Screenshot 2 - Mobile](./mobilescreen.png)
+![User Interface Screenshot 2 - Mobile](./public/mobilescreen.png)
 
 ## Author
 

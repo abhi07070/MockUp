@@ -33,6 +33,11 @@ img {
   font-style: normal;
 }
 
+.balance-info .b-info-first h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .balance-info button {
   display: flex;
   align-items: center;
@@ -118,5 +123,10 @@ img {
   .profile {
     display: flex;
     flex-direction: column;
+  }
+
+  .balance-info .b-info-first {
+    display: flex;
+    justify-content: space-between;
   }
 }

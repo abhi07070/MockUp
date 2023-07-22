@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './RightSide.css';
 import SliderRange from '../../ChakraUi/SliderRange';
 const RightSide = () => {
+  const [employeeContribution, setEmployeeContribution] = useState(12);
+  const [retirementAge, setRetirementAge] = useState(65);
   return (
     <>
       <div className="strategy">
@@ -9,13 +11,16 @@ const RightSide = () => {
           <h3>Retirement Strategy</h3>
           <h6>Employee Contribution</h6>
           <div className="slider">
-            <SliderRange />
-            <span>12%</span>
+            <SliderRange
+              value={employeeContribution}
+              setValue={setEmployeeContribution}
+            />
+            <span>{employeeContribution}%</span>
           </div>
           <h6>Retirement Age</h6>
           <div className="slider">
-            <SliderRange />
-            <span>65</span>
+            <SliderRange value={retirementAge} setValue={setRetirementAge} />
+            <span>{retirementAge}</span>
           </div>
 
           <div className="line"></div>

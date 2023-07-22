@@ -8,7 +8,6 @@ import MiddleSide from '../Slides/MiddleSide/MiddleSide';
 
 const SideNavbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,14 +17,6 @@ const SideNavbar = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  const handleToggleSidebar = () => {
-    setShowSearch(!showSearch);
-  };
-
-  const handleSearchButtonClick = () => {
-    setShowSearch(false);
-  };
 
   return (
     <>
@@ -61,11 +52,11 @@ const SideNavbar = () => {
             </div>
           </nav>
         ) : (
-          <nav className={`sidebar ${showSearch ? 'close' : ''}`}>
+          <nav className="sidebar">
             <div className="menu-bar">
               <div className="menu">
                 {windowWidth > 800 && (
-                  <li className="search-box" onClick={handleSearchButtonClick}>
+                  <li className="search-box">
                     <i className="bx bx-search icon"></i>
                     <input type="text" placeholder="Search..." />
                   </li>
@@ -85,7 +76,7 @@ const SideNavbar = () => {
                   {BottomData.map(
                     (data, key) =>
                       data.icon !== 'search' && (
-                        <li className="" key={key}>
+                        <li className="list" key={key}>
                           <a href="#">
                             <i className={`bx bx-${data.icon} icon`}></i>
                           </a>

@@ -21,6 +21,10 @@
   padding: 0.5rem 0;
 }
 
+.wrap h1 {
+  font-weight: bold;
+}
+
 .wrap span {
   font-weight: 400;
   color: var(--text-color);
@@ -72,6 +76,7 @@
 
 .goals .bars {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 700px) {

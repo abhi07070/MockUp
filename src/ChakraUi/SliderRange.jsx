@@ -6,10 +6,11 @@ import {
   SliderThumb,
   SliderTrack,
 } from '@chakra-ui/react';
-const SliderRange = () => {
+
+const SliderRange = ({ value, setValue }) => {
   return (
     <>
-      <Slider defaultValue={60} min={0} max={300} step={30}>
+      <Slider value={value} min={0} max={100} step={1} onChange={setValue}>
         <SliderTrack bg="#ddd">
           <Box position="relative" right={10} />
           <SliderFilledTrack bg="#4935ff" />

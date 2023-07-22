@@ -15,24 +15,28 @@ const MiddleSide = ({ windowWidth }) => {
             <div className="wrap">
               <h1>$300,000</h1>
               <span>My Goal</span>
-              <div className="line"></div>
+              <div className="line"></div>{' '}
+              {/* Comment: This is a horizontal line below 'My Goal' */}
             </div>
             <div className="mobile-size">
               <div className="wrap">
                 <h4>59%</h4>
                 <span>Goal Achieved</span>
-                <div className="line"></div>
+                <div className="line"></div>{' '}
+                {/* Comment: This is a horizontal line below 'Goal Achieved' */}
               </div>
               <div className="wrap">
                 <h4>$300</h4>
                 <span>Est. Monthly Income</span>
-                <div className="line"></div>
+                <div className="line"></div>{' '}
+                {/* Comment: This is a horizontal line below 'Est. Monthly Income' */}
               </div>
             </div>
           </div>
         </div>
         <h3>Contribution Overtime</h3>
-        <ApexChart />
+        <ApexChart />{' '}
+        {/* Comment: This component renders a chart for 'Contribution Overtime' */}
         <div className="compare">
           <h3>How do I compre to my peers?</h3>
           <span className="compare-span">
@@ -52,7 +56,8 @@ const MiddleSide = ({ windowWidth }) => {
               </span>
             </div>
             <div className="bars">
-              <RadialBar windowWidth={windowWidth} />
+              <RadialBar windowWidth={windowWidth} />{' '}
+              {/* Comment: This component renders radial bars based on 'windowWidth' */}
             </div>
           </div>
         </div>

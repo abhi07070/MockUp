@@ -10,11 +10,13 @@ const SideNavbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    // Event listener for window resize to update the windowWidth state
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
+    // Cleanup function to remove the event listener when the component unmounts
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -88,10 +90,10 @@ const SideNavbar = () => {
             </div>
           </nav>
         )}
-
-        <LeftSide BottomData={BottomData} windowWidth={windowWidth} />
-        <MiddleSide />
-        <RightSide />
+        <LeftSide BottomData={BottomData} windowWidth={windowWidth} />{' '}
+        {/* Comment: Render LeftSide component */}
+        <MiddleSide /> {/* Comment: Render MiddleSide component */}
+        <RightSide /> {/* Comment: Render RightSide component */}
       </section>
     </>
   );

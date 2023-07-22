@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This project is a React-based user interface for a side navigation bar with various components to display user profile details, account balance, retirement income, recent transactions, and other relevant information. It includes responsive designs to cater to different screen sizes.
 
-In the project directory, you can run:
+## Components
 
-### `npm start`
+### SideNavbar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The `SideNavbar` component represents the main sidebar navigation. It dynamically adjusts its layout based on the screen size. When the screen size is less than 1000px, it displays a simplified version of the sidebar, and when it's larger, it shows additional features.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### LeftSide
 
-### `npm test`
+The `LeftSide` component displays user profile details, account balance, and recent transactions. It conditionally shows a bell icon when the screen size is less than 800px and the 'bell' icon exists in the navigation data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### MiddleSide
 
-### `npm run build`
+The `MiddleSide` component displays retirement income details and contribution over time using ApexCharts. It also compares the user's data to their peers using radial bar charts. The displayed content adapts to the screen size.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### RightSide
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `RightSide` component represents the retirement strategy section. It includes sliders to adjust employee contribution and retirement age, along with other relevant details. Users can update their strategy and view help documentation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+To use this project, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository to your local machine.
+2. Install the necessary dependencies using `npm install`.
+3. Run the application using `npm start`.
+4. Access the application in your browser at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Provide screenshots of the user interface on different screen sizes to showcase the responsiveness and layout of the components.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![User Interface Screenshot 1 - Desktop](./fullscreen.png)
 
-## Learn More
+![User Interface Screenshot 2 - Mobile](./mobilescreen.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Your Name](https://github.com/yourusername)
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as needed.

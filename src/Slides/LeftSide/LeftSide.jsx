@@ -3,11 +3,13 @@ import user from './user.jpeg';
 import './LeftSide.css';
 
 const LeftSide = ({ BottomData, windowWidth }) => {
+  // Check if the 'bell' icon exists in BottomData
   const hasBellIcon = BottomData.some((data) => data.icon === 'bell');
 
   return (
     <>
       <div className="profile">
+        {/* Display the bell icon only if windowWidth < 800 and 'bell' icon exists in BottomData */}
         {windowWidth < 800 && hasBellIcon && (
           <li className="nav-link">
             <a href="#">
@@ -31,6 +33,7 @@ const LeftSide = ({ BottomData, windowWidth }) => {
             <h1>$19,893</h1>
             <span>Account Balance</span>
           </div>
+          {/* Mobile layout for windowWidth < 800 */}
           <div className="mobile-size">
             <div className="b-info-first">
               <h4>$4,000</h4>
@@ -43,7 +46,7 @@ const LeftSide = ({ BottomData, windowWidth }) => {
           </div>
           <div className="btn">
             <button>
-              I want to <i class="bx bxs-down-arrow"></i>
+              I want to <i className="bx bxs-down-arrow"></i>
             </button>
           </div>
         </div>

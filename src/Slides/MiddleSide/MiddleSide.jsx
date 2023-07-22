@@ -17,15 +17,17 @@ const MiddleSide = ({ windowWidth }) => {
               <span>My Goal</span>
               <div className="line"></div>
             </div>
-            <div className="wrap">
-              <h1>59%</h1>
-              <span>Goal Achieved</span>
-              <div className="line"></div>
-            </div>
-            <div className="wrap">
-              <h1>$300</h1>
-              <span>Est. Monthly Income</span>
-              <div className="line"></div>
+            <div className="mobile-size">
+              <div className="wrap">
+                <h4>59%</h4>
+                <span>Goal Achieved</span>
+                <div className="line"></div>
+              </div>
+              <div className="wrap">
+                <h4>$300</h4>
+                <span>Est. Monthly Income</span>
+                <div className="line"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@ const MiddleSide = ({ windowWidth }) => {
         <div className="compare">
           <h3>How do I compre to my peers?</h3>
           <span className="compare-span">
-            These numbers represent current goal achievement
+            These numbers represent current goal achievement.
           </span>
 
           <div className="goals">

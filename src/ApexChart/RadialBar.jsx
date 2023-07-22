@@ -29,7 +29,7 @@ const RadialBar = ({ windowWidth }) => {
           },
         },
       },
-      colors: ['#4935ff', '#4935ff', '#85afff'], // Set the colors for the individual series here
+      colors: ['#4935ff', '#4935ff', '#85afff'],
       labels: ['Average', 'Top', 'Me'],
     },
   };

@@ -13,12 +13,24 @@
   padding: 10px 0;
   font-weight: 550;
   font-style: normal;
+  font-size: 1.3rem;
 }
 
 .income-wrap {
   display: flex;
   gap: 2rem;
+  align-items: center;
   padding: 0.5rem 0;
+}
+
+.income-wrap .wrap h1 {
+  font-size: 1.2rem;
+}
+
+.income-wrap .wrap h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
 }
 
 .wrap h1 {
@@ -78,15 +90,18 @@
   display: flex;
   align-items: center;
 }
+.income-detail .income-wrap .mobile-size {
+  display: flex;
+  gap: 2rem;
+}
 
 @media screen and (max-width: 500px) {
   .compare span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .goals {
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .left-goal {
@@ -95,14 +110,18 @@
   }
 
   .wrap span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .income-wrap {
-    flex-direction: column;
-    gap: 1rem;
+    display: block;
+  }
+
+  .income-detail .income-wrap .mobile-size {
+    justify-content: space-between;
+    padding-top: 1rem;
   }
 
   .compare .compare-span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }

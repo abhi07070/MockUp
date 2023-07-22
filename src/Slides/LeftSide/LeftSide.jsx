@@ -31,13 +31,15 @@ const LeftSide = ({ BottomData, windowWidth }) => {
             <h1>$19,893</h1>
             <span>Account Balance</span>
           </div>
-          <div className="b-info-first">
-            <h4>$4,000</h4>
-            <span>Year-to-date</span>
-          </div>
-          <div className="b-info-first">
-            <h4>$1,892</h4>
-            <span>Total Interest</span>
+          <div className="mobile-size">
+            <div className="b-info-first">
+              <h4>$4,000</h4>
+              <span>Year-to-date</span>
+            </div>
+            <div className="b-info-first">
+              <h4>$1,892</h4>
+              <span>Total Interest</span>
+            </div>
           </div>
           <div className="btn">
             <button>

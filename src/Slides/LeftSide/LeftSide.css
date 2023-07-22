@@ -35,7 +35,7 @@ img {
 }
 
 .balance-info .b-info-first h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -128,9 +128,8 @@ img {
     flex-direction: column;
   }
 
-  .balance-info .b-info-first {
+  .balance-info .mobile-size {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }

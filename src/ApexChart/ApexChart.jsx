@@ -44,10 +44,10 @@ const ApexChart = () => {
       title: {
         text: '$ (thousands)',
       },
-      tickAmount: 5, // Display 4 ticks on the y-axis
+      tickAmount: 5,
       labels: {
         formatter: function (val) {
-          return `$ ${val * 10}`; // Add the $ symbol to the y-axis labels
+          return `$ ${val * 10}`;
         },
       },
     },
@@ -61,7 +61,7 @@ const ApexChart = () => {
         },
       },
     },
-    colors: ['#4935ff', '#4935ff', '#85afff'], // Add the new color here
+    colors: ['#4935ff', '#4935ff', '#85afff'],
   };
 
   return (

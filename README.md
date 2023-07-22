@@ -39,7 +39,7 @@ View on different devices
 
 ![User Interface Screenshot 2 - Mobile](./mobilescreen.png)
 
-## Authors
+## Author
 
 - [Davinder Kumar](https://github.com/abhi07070)
 

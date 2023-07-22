@@ -72,40 +72,51 @@ img {
   font-weight: 500;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .profile {
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .profile-detail {
     flex-direction: column;
   }
   .balance-info button {
     width: 100%;
     justify-content: center;
   }
-}
 
-.profile li {
-  list-style: none;
-}
+  .profile li {
+    list-style: none;
+  }
 
-.profile li a {
-  position: relative;
+  .profile li a {
+    position: relative;
+  }
+  .profile li a::after {
+    content: '';
+    position: fixed;
+    top: 10px;
+    right: 24px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #85afff;
+  }
+  .profile li a .bill {
+    position: fixed;
+    top: 13px;
+    right: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
 }
-.profile li a::after {
-  content: '';
-  position: fixed;
-  top: 10px;
-  right: 24px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50px;
-  background: #85afff;
-}
-.profile li a .bill {
-  position: fixed;
-  top: 13px;
-  right: 25px;
-  font-size: 20px;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+@media screen and (max-width: 600px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -99,6 +99,7 @@
 @media screen and (max-width: 700px) {
   .strategy {
     padding: 15px 18px 15px 20px;
+    height: 100vh;
   }
 
   .strategy .sliders h6 {

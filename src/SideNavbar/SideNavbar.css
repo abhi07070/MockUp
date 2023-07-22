@@ -1,3 +1,8 @@
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
 ::selection {
   background-color: var(--primary-color);
   color: #fff;
@@ -12,18 +17,18 @@ body.dark {
 }
 /* ===== Sidebar ===== */
 .sidebar {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   height: 100%;
-  width: 250px;
+  width: 70px;
   padding: 10px 14px;
   background: var(--sidebar-color);
   transition: var(--tran-05);
   z-index: 100;
 }
-.sidebar.close {
+/* .sidebar.close {
   width: 70px;
-}
+} */
 /* ===== Reusable code - Here ===== */
 .sidebar li {
   height: 50px;
@@ -198,12 +203,12 @@ body.dark .sidebar li a:hover .text {
 body.dark .switch::before {
   left: 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .sidebar {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    height: 90px;
+    height: 80px;
     width: 100%;
     padding: 0px;
     background: #fff;

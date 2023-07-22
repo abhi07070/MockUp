@@ -30,7 +30,7 @@ body {
 .grid {
   display: grid;
   /* grid-template-rows: 20rem; */
-  grid-template-columns: 20rem auto 20rem;
+  grid-template-columns: auto 1fr 2fr 1fr;
 }
 
 .home {
@@ -62,9 +62,8 @@ body.dark .home .text {
   justify-content: space-between; /* Adjust the flex properties as per your requirement */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .grid {
-    justify-content: center;
     align-items: center;
     grid-template-columns: none;
   }

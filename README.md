@@ -1,4 +1,4 @@
-# Project Name
+# MockUp
 
 ## Description
 
@@ -31,9 +31,9 @@ To use this project, follow these steps:
 3. Run the application using `npm start`.
 4. Access the application in your browser at `http://localhost:3000`.
 
-## Screenshots
+## UI
 
-Provide screenshots of the user interface on different screen sizes to showcase the responsiveness and layout of the components.
+View on different devices
 
 ![User Interface Screenshot 1 - Desktop](./fullscreen.png)
 
@@ -41,7 +41,7 @@ Provide screenshots of the user interface on different screen sizes to showcase 
 
 ## Authors
 
-- [Your Name](https://github.com/yourusername)
+- [Davinder Kumar](https://github.com/abhi07070)
 
 ## License
 
